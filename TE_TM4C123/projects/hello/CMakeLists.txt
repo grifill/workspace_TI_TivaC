@@ -12,9 +12,9 @@ project(hello)
 set(EXECUTABLE ${PROJECT_NAME}.elf)
 set(LINKER_FILE ${CMAKE_SOURCE_DIR}/tm4c123gh6pz.ld)
 
-# Repo dir
-get_filename_component(REPO_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../.." ABSOLUTE)
-message(STATUS "Parent dir is: ${REPO_DIR}")
+# Libs dir
+get_filename_component(LIBS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../../.." ABSOLUTE)
+message(STATUS "Libs dir PATH is: ${LIBS_DIR}")
 
 enable_language(C ASM)
 set(CMAKE_C_STANDARD 99)
@@ -30,7 +30,7 @@ add_executable(${EXECUTABLE} ${APP_SRC})
 
 # List of include directories
 target_include_directories(${EXECUTABLE} PRIVATE
-    ${REPO_DIR}/libs/TivaC_Libs
+    ${LIBS_DIR}/libs/TivaC_Libs
 )
 
 # List of compiler defines, prefix with -D compiler option
