@@ -12,9 +12,13 @@ project(main_combine)
 set(EXECUTABLE ${PROJECT_NAME}.elf)
 set(LINKER_FILE ${CMAKE_SOURCE_DIR}/tm4c123gh6pz.ld)
 
-# Repo dir
-get_filename_component(REPO_DIR "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
-message(STATUS "Parent dir is: ${REPO_DIR}")
+# Libs dir
+get_filename_component(LIBS_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../.." ABSOLUTE)
+message(STATUS "Repo dir is: ${REPO_DIR}")
+
+# Examples dir
+get_filename_component(EXAPLES_DIR "${CMAKE_CURRENT_SOURCE_DIR}/.." ABSOLUTE)
+message(STATUS "Examples dir is: ${EXAPLES_DIR}")
 
 enable_language(C ASM)
 set(CMAKE_C_STANDARD 99)
@@ -25,7 +29,7 @@ set(CMAKE_C_EXTENSIONS OFF)
 file(GLOB_RECURSE SOURCES_FILES CONFIGURE_DEPENDS 
     "${REPO_DIR}/libs/TivaC_Libs/*.c"
     "${REPO_DIR}/libs/User_Libs/*.c"
-    "${REPO_DIR}/examples/src/*.c"
+    "${EXAPLES_DIR}/examples/src/*.c"
 )
 
 set(APP_SRC
@@ -40,10 +44,10 @@ add_executable(${EXECUTABLE} ${APP_SRC})
 target_include_directories(${EXECUTABLE} PRIVATE
     ${REPO_DIR}/libs/TivaC_Libs
     ${REPO_DIR}/libs/User_Libs
-    ${REPO_DIR}/examples/src/gpio
-    ${REPO_DIR}/examples/src/systick
-    ${REPO_DIR}/examples/src/timer
-    ${REPO_DIR}/examples/src/uart
+    ${EXAPLES_DIR}/examples/src/gpio
+    ${EXAPLES_DIR}/examples/src/systick
+    ${EXAPLES_DIR}/examples/src/timer
+    ${EXAPLES_DIR}/examples/src/uart
 )
 
 # List of compiler defines, prefix with -D compiler option
