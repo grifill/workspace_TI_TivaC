@@ -26,6 +26,16 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>LIBRARY_TIVA_LOC</name>
+			<type>2</type>
+			<locationURI>LIBRARY_TIVA_LOC</locationURI>
+		</link>
+		<link>
+			<name>LIBRARY_USER_LOC</name>
+			<type>2</type>
+			<locationURI>LIBRARY_USER_LOC</locationURI>
+		</link>
+		<link>
 			<name>gpio</name>
 			<type>2</type>
 			<locationURI>SRC_EXAMPLES_LOC/gpio</locationURI>
@@ -54,11 +64,11 @@
 	<variableList>
 		<variable>
 			<name>LIBRARY_TIVA_LOC</name>
-			<value>$%7BPARENT-2-PROJECT_LOC%7D/libs/TivaC_Libs</value>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/TivaC_Libs</value>
 		</variable>
 		<variable>
 			<name>LIBRARY_USER_LOC</name>
-			<value>$%7BPARENT-2-PROJECT_LOC%7D/libs/User_Libs</value>
+			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/User_Libs</value>
 		</variable>
 		<variable>
 			<name>SRC_EXAMPLES_LOC</name>
