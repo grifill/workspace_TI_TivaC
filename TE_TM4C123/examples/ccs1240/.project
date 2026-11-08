@@ -26,16 +26,6 @@
 	</natures>
 	<linkedResources>
 		<link>
-			<name>LIBRARY_TIVA_LOC</name>
-			<type>2</type>
-			<locationURI>LIBRARY_TIVA_LOC</locationURI>
-		</link>
-		<link>
-			<name>LIBRARY_USER_LOC</name>
-			<type>2</type>
-			<locationURI>LIBRARY_USER_LOC</locationURI>
-		</link>
-		<link>
 			<name>gpio</name>
 			<type>2</type>
 			<locationURI>SRC_EXAMPLES_LOC/gpio</locationURI>
