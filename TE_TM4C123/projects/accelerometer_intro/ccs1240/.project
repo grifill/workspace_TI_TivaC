@@ -44,11 +44,11 @@
 	<variableList>
 		<variable>
 			<name>LIBRARY_TIVA_LOC</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/TivaC_Libs</value>
+			<value>$%7BPARENT-4-PROJECT_LOC%7D/libs/TivaC_Libs</value>
 		</variable>
 		<variable>
 			<name>LIBRARY_USER_LOC</name>
-			<value>$%7BPARENT-3-PROJECT_LOC%7D/libs/User_Libs</value>
+			<value>$%7BPARENT-4-PROJECT_LOC%7D/libs/User_Libs</value>
 		</variable>
 	</variableList>
 </projectDescription>
