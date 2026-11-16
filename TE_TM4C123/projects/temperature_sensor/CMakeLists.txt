@@ -8,7 +8,7 @@ set(CMAKE_TOOLCHAIN_FILE ${CMAKE_SOURCE_DIR}/cmake/arm-none-eabi-gcc.cmake)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 
 # Setup project, output, and linker files
-project(hello)
+project(temperature_sensor)
 set(EXECUTABLE ${PROJECT_NAME}.elf)
 set(LINKER_FILE ${CMAKE_SOURCE_DIR}/tm4c123gh6pz.ld)
 
@@ -22,7 +22,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS OFF)
 
 set(APP_SRC
-    main_hello.c
+    main_temp.c
     tm4c123gh6pz_startup.c
 )
 
