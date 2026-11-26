@@ -49,7 +49,7 @@ extern "C"
 #include "driverlib/systick.h"
 
 // User-lib
-#include "func_gpio.h"
+#include "periph/func_gpio.h"
 
 // Main examples function
 int example_timer_leds(void);
